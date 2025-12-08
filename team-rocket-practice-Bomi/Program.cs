@@ -106,7 +106,7 @@ namespace team_rocket_practice_Bomi
             //Console.WriteLine("請依序輸入 a, b 兩數：");
             //a = Convert.ToDouble(Console.ReadLine());
             //b = Convert.ToDouble(Console.ReadLine());
-            
+
             //y = Math.Sqrt( Math.Pow(a, 2) + Math.Pow(b, 2) );
             //Console.WriteLine("y = " + y);
 
@@ -116,7 +116,16 @@ namespace team_rocket_practice_Bomi
 
 
 
-            
+            ////1-5. 輸入a、b和c，求：y = a - (b + c)(3a - c)
+            //double a, b, c, y;
+            //Console.WriteLine(" y = a - (b + c)(3a - c) ");
+            //Console.WriteLine("請依序輸入 a, b, c 三數：");
+            //a = Convert.ToDouble(Console.ReadLine());
+            //b = Convert.ToDouble(Console.ReadLine());
+            //c = Convert.ToDouble(Console.ReadLine());
+
+            //y = a - (b + c) * (3 * a - c);
+            //Console.WriteLine("y = " + y);
         }
     }
 }
