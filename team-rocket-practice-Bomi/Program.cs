@@ -296,6 +296,23 @@ namespace team_rocket_practice_Bomi
              ||                          邏輯OR
              =, +=, -=, *=...等          指派(+=系列：x += 10; x = x + 10 的意思)
              */
+
+
+
+
+
+
+            ////2-1. 寫一程式，輸入x和y，如果x>=y，則列印x，否則列印y
+            //double x, y;
+            //Console.WriteLine("請依序輸入 x, y 兩數");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //y = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine($"x = {x}, y = {y}");
+
+            //if ( x >= y) { Console.WriteLine("x"); }
+            //else { Console.WriteLine("y"); }
+
+
         }
     }
 }
