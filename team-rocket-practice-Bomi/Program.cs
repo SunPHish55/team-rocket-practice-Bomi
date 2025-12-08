@@ -126,6 +126,17 @@ namespace team_rocket_practice_Bomi
 
             //y = a - (b + c) * (3 * a - c);
             //Console.WriteLine("y = " + y);
+
+
+
+
+
+
+            ////1-6. 請隨意輸入正負數，取絕對值輸出
+            //Console.WriteLine("請隨意輸入正負數，將會取絕對值後輸出：");
+            //double a = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("絕對值 = " + ( Math.Abs(a) ));
+
         }
     }
 }
