@@ -226,6 +226,59 @@ namespace team_rocket_practice_Bomi
             str s1 = "像這樣", s2 = "就可以", s3 = "一次宣告多字串";
             須注意就算多變數的數值相同也需要分別賦值
              */
+
+
+
+
+
+
+            /*
+            說明型別之間如何轉換
+            | 方法                   | 使用情境                  |
+            | --------------------   | ---------------------     |
+            | 隱式轉換               | 安全、範圍擴大（int → double） |
+            如：
+            int a = 10;
+            double d = a;
+            直接將不同型別的變數塞進另一個變數裡
+
+            | 顯式轉換               | 可能遺失精度（double → int）   |
+            如：
+            double d = 3.14;
+            int a = (int)d;
+            須加上額外指令指名要將不同型別的變數塞進另一個變數裡，可能會遺失資料，
+            如範例中d原本是3.14，轉換成int塞進a後剩下3而已
+
+            | Convert 類別           | 常用於字串與其他型別            |
+            如：
+            str s1 = "123", s2 = "123.123"
+            Convert.ToInt32(s1);
+            Convert.ToIntDouble(s2);
+            會依照一定規則轉換，例如小數部分不是直接捨去而是四捨五入
+
+            | Parse / TryParse       | 使用者輸入、字串轉數字最佳選擇  |
+            如：
+            Parse：
+            int n = int.Parse("123");       // 123
+            double d = double.Parse("3.14"); // 3.14
+            bool flag = bool.Parse("true");  // true
+
+            只能輸入 string 轉換，如果格式錯誤會拋例外
+            int n = int.Parse("abc");   // 例外：FormatException
+
+            TryParse：
+            更安全的轉換方式，可以避免被拋例外
+            int value;
+            bool ok = int.TryParse("123", out value);
+            if (ok)
+            {
+                Console.WriteLine(value); // 123
+            }
+            else
+            {
+                Console.WriteLine("轉換失敗");
+            }
+             */
         }
     }
 }
