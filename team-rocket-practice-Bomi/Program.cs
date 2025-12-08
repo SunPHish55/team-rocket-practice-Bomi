@@ -172,6 +172,31 @@ namespace team_rocket_practice_Bomi
             //    BMI = weight / Math.Pow(height, 2);
             //    Console.WriteLine($"BMI 為：{BMI:F2}");
             //}
+
+
+
+
+
+            /*
+             C#的變數型態、預設值、長度、值的範圍
+            變數型態    預設值     長度      值的範圍
+            sbyte       0          8bits     -128 ~ 127
+            short       0          16bits    -32768 ~ 32767
+            int         0          32bits    -2,147,483,648 ~ 2,147,483,647
+            long        0          64bits    -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807
+            (以上整數都有無號版)
+
+            float       0.0f       32bits    正負1.5*10^-45 ~ 正負 3.4*10^38
+            double      0.0        64bits    正負5.0*10^-324 ~ 正負 1.7*10^308
+            decimal     0.0m       128bits   正負7.9*10^28
+
+            char        '\0'       2bytes    Unicode（0~65535）
+            string      null       參考型別(8bytes)
+            bool        false      1bytes    true/false
+            
+            array       陣列
+             */
+
         }
     }
 }
