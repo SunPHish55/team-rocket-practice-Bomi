@@ -81,20 +81,42 @@ namespace team_rocket_practice_Bomi
 
 
             ////1-3. 輸入a和b，求：( a^2 + b^2 ) / ( a^2 - b^2 )
-            //double a, b, result;
+            //double a, b, y;
             //Console.WriteLine("請依序輸入 a, b 兩數：");
             //a = Convert.ToDouble(Console.ReadLine());
             //b = Convert.ToDouble(Console.ReadLine());
-            
+
             //if( Math.Pow( a, 2) - Math.Pow( b, 2) == 0)
             //{
             //    Console.WriteLine("Error! Denominator can't be 0!");
             //}
             //else
             //{
-            //    result = (Math.Pow(a, 2) + Math.Pow(b, 2)) / (Math.Pow(a, 2) - Math.Pow(b, 2));
-            //    Console.WriteLine("result = " + result);
+            //    y = (Math.Pow(a, 2) + Math.Pow(b, 2)) / (Math.Pow(a, 2) - Math.Pow(b, 2));
+            //    Console.WriteLine("y = " + y);
             //}
+
+
+
+
+
+
+            ////1-4. 輸入a和b，求：y = sqrt( a^2 + b^2 )
+            //double a, b, y;
+            //Console.WriteLine("請依序輸入 a, b 兩數：");
+            //a = Convert.ToDouble(Console.ReadLine());
+            //b = Convert.ToDouble(Console.ReadLine());
+            
+            //y = Math.Sqrt( Math.Pow(a, 2) + Math.Pow(b, 2) );
+            //Console.WriteLine("y = " + y);
+
+
+
+
+
+
+
+            
         }
     }
 }
