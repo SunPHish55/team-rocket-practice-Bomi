@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,7 +42,7 @@ namespace team_rocket_practice_Bomi
             //double D, sol_x, sol_y;
             //Console.WriteLine("請依照步驟輸入二元一次方程式 / a1 x + b1 y = c1");
             //Console.WriteLine("                             / a2 x + b2 y = c2");
-            
+
             ////輸入二元一次方程式
             ////輸入第一個式子
             //Console.WriteLine("a1 = ");
@@ -79,6 +80,21 @@ namespace team_rocket_practice_Bomi
 
 
 
+            ////1-3. 輸入a和b，求：( a^2 + b^2 ) / ( a^2 - b^2 )
+            //double a, b, result;
+            //Console.WriteLine("請依序輸入 a, b 兩數：");
+            //a = Convert.ToDouble(Console.ReadLine());
+            //b = Convert.ToDouble(Console.ReadLine());
+            
+            //if( Math.Pow( a, 2) - Math.Pow( b, 2) == 0)
+            //{
+            //    Console.WriteLine("Error! Denominator can't be 0!");
+            //}
+            //else
+            //{
+            //    result = (Math.Pow(a, 2) + Math.Pow(b, 2)) / (Math.Pow(a, 2) - Math.Pow(b, 2));
+            //    Console.WriteLine("result = " + result);
+            //}
         }
     }
 }
