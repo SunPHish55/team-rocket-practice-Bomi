@@ -137,6 +137,20 @@ namespace team_rocket_practice_Bomi
             //double a = Convert.ToDouble(Console.ReadLine());
             //Console.WriteLine("絕對值 = " + ( Math.Abs(a) ));
 
+
+
+
+
+            ////1-7. 輸入的西元年份轉換成民國年份後輸出
+            //int ROCera, AD;
+            //Console.WriteLine("請輸入西元年份 ：");
+            //AD = Convert.ToInt32(Console.ReadLine());
+            //if( AD < 1912) { Console.WriteLine("還沒有民國呢"); }
+            //else
+            //{
+            //    ROCera = AD - 1911;
+            //    Console.WriteLine($"西元 {AD} 年 = 民國 {ROCera} 年");
+            //}
         }
     }
 }
