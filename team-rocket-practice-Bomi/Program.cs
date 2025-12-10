@@ -577,6 +577,42 @@ namespace team_rocket_practice_Bomi
             //    }
             //    Console.WriteLine($"BMI 為：{BMI:F2}, {BMI_context}");
             //}
+
+
+
+
+
+
+            ////補充習題3. 請隨意輸入三個數，請由大到小依序印出。
+            //double x, y, z;
+            //double n1, n2, n3;
+            //Console.WriteLine("請隨意輸入三個數：");
+            //Console.Write("數1：");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("數2：");
+            //y = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("數3：");
+            //z = Convert.ToDouble(Console.ReadLine());
+            //if(x > y && x > z)
+            //{
+            //    n1 = x;
+            //    if (y > z) { n2 = y; n3 = z; }
+            //    else { n2 = z; n3 = y; }
+            //}
+            //else if (y > x && y > z)
+            //{
+            //    n1 = y;
+            //    if (x > z) { n2 = x; n3 = z; }
+            //    else { n2 = z; n3 = x; }
+            //}
+            //else
+            //{
+            //    n1 = z;
+            //    if (x > y) { n2 = x; n3 = y; }
+            //    else { n2 = y; n3 = x; }
+            //}
+            //Console.WriteLine($"由大到小排列為：{n1}, {n2}, {n3}");
+
         }
     }
 }
