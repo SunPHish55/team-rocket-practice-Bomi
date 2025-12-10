@@ -389,6 +389,29 @@ namespace team_rocket_practice_Bomi
             //    z = sum1;
             //}
             //Console.WriteLine("z = " + z);
+
+
+
+
+
+
+            ////寫一程式，輸入x和y，如果x>=y，令z=x^2，否則令z=y^2
+            //double x, y, z;
+            //Console.WriteLine("請依序輸入 x, y：");
+            //Console.Write("x = ");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("y = ");
+            //y = Convert.ToDouble(Console.ReadLine());
+            //if(x >= y)
+            //{
+            //    z = x * x;
+            //}
+            //else
+            //{
+            //    z = y * y;
+            //}
+            //Console.WriteLine("z = " + z);
+
         }
     }
 }
