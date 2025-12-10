@@ -395,7 +395,7 @@ namespace team_rocket_practice_Bomi
 
 
 
-            ////寫一程式，輸入x和y，如果x>=y，令z=x^2，否則令z=y^2
+            ////2-5. 寫一程式，輸入x和y，如果x>=y，令z=x^2，否則令z=y^2
             //double x, y, z;
             //Console.WriteLine("請依序輸入 x, y：");
             //Console.Write("x = ");
@@ -412,6 +412,47 @@ namespace team_rocket_practice_Bomi
             //}
             //Console.WriteLine("z = " + z);
 
+
+
+
+
+
+            ////2-6. 依流程圖寫出一程式：讀入收入並根據收入及稅率計算稅額
+            //double income, tax, rate, dif;
+            //Console.Write("Please enter income：");
+            //income = Convert.ToDouble(Console.ReadLine());
+            //if (income <= 0)
+            //{
+            //    Console.WriteLine("Get a job!");
+            //    return;
+            //}
+            //if (income >= 4090000)
+            //{
+            //    rate = 0.4;
+            //    dif = 721100;
+            //}
+            //else if (income >= 2180000)
+            //{
+            //    rate = 0.3;
+            //    dif = 312100;
+            //}
+            //else if (income >= 1090000)
+            //{
+            //    rate = 0.21;
+            //    dif = 115900;
+            //}
+            //else if (income >= 410000)
+            //{
+            //    rate = 0.13;
+            //    dif = 28700;
+            //}
+            //else 
+            //{
+            //    rate = 0.06;
+            //    dif = 0;
+            //}
+            //tax = income * rate - dif;
+            //Console.WriteLine("tax：" + tax);
         }
     }
 }
