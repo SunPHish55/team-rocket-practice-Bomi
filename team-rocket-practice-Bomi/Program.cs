@@ -537,6 +537,46 @@ namespace team_rocket_practice_Bomi
             //    score = correct * 6;
             //}
             //Console.WriteLine("分數為：" + score);
+
+
+
+
+
+
+            ////補充習題2. BMI計算器plus
+            //double height, weight, BMI;
+            //string BMI_context;
+            //Console.WriteLine("BMI計算器");
+            //Console.WriteLine("請輸入身高(cm)：");
+            //height = Convert.ToDouble(Console.ReadLine());
+            //height = height / 100;
+            //Console.WriteLine("請輸入體重(kg)：");
+            //weight = Convert.ToDouble(Console.ReadLine());
+            //if (height < 0 || weight < 0 || height > 5 || weight > 500)
+            //{
+            //    Console.WriteLine("請輸入有效數字！");
+            //}
+            //else
+            //{
+            //    BMI = weight / Math.Pow(height, 2);
+            //    if (BMI < 18.5)
+            //    {
+            //        BMI_context = "過輕";
+            //    }
+            //    else if (BMI >= 18.5 && BMI < 24)
+            //    {
+            //        BMI_context = "正常";
+            //    }
+            //    else if (BMI >= 24 && BMI < 27)
+            //    {
+            //        BMI_context = "過重";
+            //    }
+            //    else
+            //    {
+            //        BMI_context = "肥胖";
+            //    }
+            //    Console.WriteLine($"BMI 為：{BMI:F2}, {BMI_context}");
+            //}
         }
     }
 }
