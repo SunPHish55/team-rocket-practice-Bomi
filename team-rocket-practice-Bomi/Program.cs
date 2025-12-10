@@ -313,6 +313,52 @@ namespace team_rocket_practice_Bomi
             //else { Console.WriteLine("y"); }
 
 
+
+
+
+
+            ////2-2. 寫一程式，輸入x和y，如果x和y都是正數，令z=1，如兩者均為負數，令z=-1，否則令z=0
+            //double x, y;
+            //int z = 0;
+            //Console.WriteLine("請依序輸入x和y：");
+            //Console.Write("x = ");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("y = ");
+            //y = Convert.ToDouble(Console.ReadLine());
+            //if (x > 0 && y > 0) { z = 1; }
+            //if (x < 0 && y < 0) { z = -1; }
+            //Console.WriteLine("z = " + z);
+
+
+
+
+
+
+            ////2-3. 寫一程式，輸入x、y、u、v，如果(x+y)>(u+v)，則令z=x+y，否則令z=u+v
+            //double x, y, u, v, z;
+            //double sum1, sum2;
+            //Console.WriteLine("請依序輸入 x, y, u , v ：");
+            //Console.Write("x = ");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("y = ");
+            //y = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("u = ");
+            //u = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("v = ");
+            //v = Convert.ToDouble(Console.ReadLine());
+            //sum1 = x + y;
+            //sum2 = u + v;
+            //Console.WriteLine("x + y =" + sum1 + ", u + v = " + sum2);
+            //if(sum1 == sum2)
+            //{
+            //    z = 0;
+            //    Console.WriteLine("一樣大");
+            //}
+            //else
+            //{
+            //    z = Math.Max(sum1, sum2);
+            //    Console.WriteLine("z = " + z);
+            //}
         }
     }
 }
