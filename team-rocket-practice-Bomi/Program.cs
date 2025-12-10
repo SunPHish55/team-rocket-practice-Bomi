@@ -453,6 +453,63 @@ namespace team_rocket_practice_Bomi
             //}
             //tax = income * rate - dif;
             //Console.WriteLine("tax：" + tax);
+
+
+
+
+
+
+
+            ////2-7. 根據流程圖完成程式：象限判斷
+            //double x, y;
+            //string locate;
+            //Console.WriteLine("二維象限判斷");
+            //Console.Write("x = ");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("y = ");
+            //y = Convert.ToDouble(Console.ReadLine());
+            //if(x > 0)
+            //{
+            //    if(y > 0)
+            //    {
+            //        locate = "1st quadrant\n";
+            //    }
+            //    else if (y == 0)
+            //    {
+            //        locate = "X-axis\n";
+            //    }
+            //    else
+            //    {
+            //        locate = "4st quadrant\n";
+            //    }
+            //}
+            //else if (x == 0)
+            //{
+            //    if (y == 0)
+            //    {
+            //        locate = "Origin\n";
+            //    }
+            //    else
+            //    {
+            //        locate = "Y-axis\n";
+            //    }
+            //}
+            //else
+            //{
+            //    if (y > 0)
+            //    {
+            //        locate = "2st quadrant\n";
+            //    }
+            //    else if (y == 0)
+            //    {
+            //        locate = "X-axis\n";
+            //    }
+            //    else
+            //    {
+            //        locate = "3st quadrant\n";
+            //    }
+            //}
+            //Console.WriteLine("此點在 "+ locate);
         }
     }
 }
