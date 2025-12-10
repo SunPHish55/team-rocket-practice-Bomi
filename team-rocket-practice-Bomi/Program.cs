@@ -510,6 +510,33 @@ namespace team_rocket_practice_Bomi
             //    }
             //}
             //Console.WriteLine("此點在 "+ locate);
+
+
+
+
+
+
+            ////補充習題1. 分數計算
+            //int correct, score;
+            //Console.Write("請輸入答對題數(整數)：");
+            //correct = Convert.ToInt32(Console.ReadLine());
+            //if(correct > 40)
+            //{
+            //    score = 100;
+            //}
+            //else if (correct > 20 && correct <= 40)
+            //{
+            //    score = 80 + (correct - 20);
+            //}
+            //else if (correct > 10 && correct <= 20)
+            //{
+            //    score = 60 + (correct - 10) * 2;
+            //}
+            //else
+            //{
+            //    score = correct * 6;
+            //}
+            //Console.WriteLine("分數為：" + score);
         }
     }
 }
