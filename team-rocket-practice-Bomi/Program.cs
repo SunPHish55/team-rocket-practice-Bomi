@@ -359,6 +359,36 @@ namespace team_rocket_practice_Bomi
             //    z = Math.Max(sum1, sum2);
             //    Console.WriteLine("z = " + z);
             //}
+
+
+
+
+
+
+            ////2-4. 輸入x、y、u、v，如果((𝑥+𝑦))/((𝑢+𝑣))>=2，令z=x+y，否則令z=u+v。
+            //double x, y, u, v, z;
+            //double sum1, sum2;
+            //Console.WriteLine("請依序輸入 x, y, u , v ：");
+            //Console.Write("x = ");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("y = ");
+            //y = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("u = ");
+            //u = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("v = ");
+            //v = Convert.ToDouble(Console.ReadLine());
+            //sum1 = x + y;
+            //sum2 = u + v;
+            //z = sum2;
+            //if (sum2  == 0){
+            //    Console.WriteLine("ERROR：分母不可為0！");
+            //    return;
+            //}
+            //else if (sum1 / sum2 >= 2)
+            //{
+            //    z = sum1;
+            //}
+            //Console.WriteLine("z = " + z);
         }
     }
 }
