@@ -1,0 +1,700 @@
+﻿using System;
+
+public class IfElse
+{
+	public static void run()
+	{
+        ////1-1.寫一程式，輸入a,b,c,d，計算((𝑎+𝑏))/((𝑐−𝑑))×2。
+        //double a, b, c, d, result;
+        //Console.WriteLine("請依序輸入 a, b, c, d 4個數：");
+        //a = Convert.ToDouble(Console.ReadLine());
+        //b = Convert.ToDouble(Console.ReadLine());
+        //c = Convert.ToDouble(Console.ReadLine());
+        //d = Convert.ToDouble(Console.ReadLine());
+        //if (c - d == 0)
+        //{
+        //    Console.WriteLine("Error! Denominator can't be 0!");
+        //}
+        //else
+        //{
+        //    result = ((a + b) / (c - d)) * 2;
+        //    Console.WriteLine($"( ({a} + {b}) / ({c} - {d}) ) × 2");
+        //    Console.WriteLine($" = ( {a + b} / {c - d} ) × 2");
+        //    Console.WriteLine(" = " + result);
+        //    Console.WriteLine("Result = " + result);
+        //}
+
+
+
+
+
+
+
+        ////1-2. 二元一次方程式公式解
+        //double a1, a2, b1, b2, c1, c2;
+        //double D, sol_x, sol_y;
+        //Console.WriteLine("請依照步驟輸入二元一次方程式 / a1 x + b1 y = c1");
+        //Console.WriteLine("                             / a2 x + b2 y = c2");
+
+        ////輸入二元一次方程式
+        ////輸入第一個式子
+        //Console.WriteLine("a1 = ");
+        //a1 = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("b1 = ");
+        //b1 = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("c1 = ");
+        //c1 = Convert.ToDouble(Console.ReadLine());
+        ////輸入第二個式子
+        //Console.WriteLine("a2 = ");
+        //a2 = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("b2 = ");
+        //b2 = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("c2 = ");
+        //c2 = Convert.ToDouble(Console.ReadLine());
+
+        //D = a1 * b2 - a2 * b1; //判別式
+        //if( D == 0)
+        //{
+        //    if(a1 * c2 == a2 * c1)//比較係數判斷無解還是無限多組解
+        //    {
+        //        Console.WriteLine("無限多組解");
+        //    }
+        //    else { Console.WriteLine("無解"); }
+        //}
+        ////解
+        //else
+        //{
+        //    sol_x = (c1 * b2 - c2 * b1) / D;
+        //    sol_y = (c1 * a2 - c2 * a1) / -D;
+        //    Console.WriteLine($"x = {sol_x}, y = {sol_y}");
+        //}
+
+
+
+
+
+        ////1-3. 輸入a和b，求：( a^2 + b^2 ) / ( a^2 - b^2 )
+        //double a, b, y;
+        //Console.WriteLine("請依序輸入 a, b 兩數：");
+        //a = Convert.ToDouble(Console.ReadLine());
+        //b = Convert.ToDouble(Console.ReadLine());
+
+        //if( Math.Pow( a, 2) - Math.Pow( b, 2) == 0)
+        //{
+        //    Console.WriteLine("Error! Denominator can't be 0!");
+        //}
+        //else
+        //{
+        //    y = (Math.Pow(a, 2) + Math.Pow(b, 2)) / (Math.Pow(a, 2) - Math.Pow(b, 2));
+        //    Console.WriteLine("y = " + y);
+        //}
+
+
+
+
+
+
+        ////1-4. 輸入a和b，求：y = sqrt( a^2 + b^2 )
+        //double a, b, y;
+        //Console.WriteLine("請依序輸入 a, b 兩數：");
+        //a = Convert.ToDouble(Console.ReadLine());
+        //b = Convert.ToDouble(Console.ReadLine());
+
+        //y = Math.Sqrt( Math.Pow(a, 2) + Math.Pow(b, 2) );
+        //Console.WriteLine("y = " + y);
+
+
+
+
+
+
+
+        ////1-5. 輸入a、b和c，求：y = a - (b + c)(3a - c)
+        //double a, b, c, y;
+        //Console.WriteLine(" y = a - (b + c)(3a - c) ");
+        //Console.WriteLine("請依序輸入 a, b, c 三數：");
+        //a = Convert.ToDouble(Console.ReadLine());
+        //b = Convert.ToDouble(Console.ReadLine());
+        //c = Convert.ToDouble(Console.ReadLine());
+
+        //y = a - (b + c) * (3 * a - c);
+        //Console.WriteLine("y = " + y);
+
+
+
+
+
+
+        ////1-6. 請隨意輸入正負數，取絕對值輸出
+        //Console.WriteLine("請隨意輸入正負數，將會取絕對值後輸出：");
+        //double a = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine("絕對值 = " + ( Math.Abs(a) ));
+
+
+
+
+
+        ////1-7. 輸入的西元年份轉換成民國年份後輸出
+        //int ROCera, AD;
+        //Console.WriteLine("請輸入西元年份 ：");
+        //AD = Convert.ToInt32(Console.ReadLine());
+        //if( AD < 1912) { Console.WriteLine("還沒有民國呢"); }
+        //else
+        //{
+        //    ROCera = AD - 1911;
+        //    Console.WriteLine($"西元 {AD} 年 = 民國 {ROCera} 年");
+        //}
+
+
+
+
+
+
+        ////1-8. 請輸入身高體重，輸出BMI
+        //double height, weight, BMI;
+        //Console.WriteLine("BMI計算器");
+        //Console.WriteLine("請輸入身高(cm)：");
+        //height = Convert.ToDouble(Console.ReadLine());
+        //height = height / 100;
+        //Console.WriteLine("請輸入體重(kg)：");
+        //weight = Convert.ToDouble(Console.ReadLine());
+        //if (height < 0 || weight < 0 || height >5 || weight > 500){
+        //    Console.WriteLine("請輸入有效數字！");
+        //}
+        //else {
+        //    BMI = weight / Math.Pow(height, 2);
+        //    Console.WriteLine($"BMI 為：{BMI:F2}");
+        //}
+
+
+
+
+
+        /*
+         C#的變數型態、預設值、長度、值的範圍
+        變數型態    預設值     長度      值的範圍
+        sbyte       0          8bits     -128 ~ 127
+        short       0          16bits    -32768 ~ 32767
+        int         0          32bits    -2,147,483,648 ~ 2,147,483,647
+        long        0          64bits    -9,223,372,036,854,775,808 ~ 9,223,372,036,854,775,807
+        (以上整數都有無號版)
+
+        float       0.0f       32bits    正負1.5*10^-45 ~ 正負 3.4*10^38
+        double      0.0        64bits    正負5.0*10^-324 ~ 正負 1.7*10^308
+        decimal     0.0m       128bits   正負7.9*10^28
+
+        char        '\0'       2bytes    Unicode（0~65535）
+        string      null       參考型別(8bytes)
+        bool        false      1bytes    true/false
+
+        array       陣列
+         */
+
+
+
+
+
+        /*
+        變數宣告的方法
+
+        宣告變數：
+        變數種類 變數名稱;
+        如：
+        int a;
+        即可宣告一個名為a的整數變數
+
+        同時宣告多變數：
+        用,分隔多變數即可
+        如：
+        int a, b, c;
+        就宣告了 a, b, c 三個整數變數
+        str s1, s2;
+        宣告了 s1, s2 兩個整數變數
+
+        宣告變數時，同時指定變數初始值：
+        宣告變數時在名稱後接 = 數值 即可
+        如：
+        int a = 10;
+        int b = 5, c = 10;
+        str s1 = "像這樣", s2 = "就可以", s3 = "一次宣告多字串";
+        須注意就算多變數的數值相同也需要分別賦值
+         */
+
+
+
+
+
+
+        /*
+        說明型別之間如何轉換
+        | 方法                   | 使用情境                  |
+        | --------------------   | ---------------------     |
+        | 隱式轉換               | 安全、範圍擴大（int → double） |
+        如：
+        int a = 10;
+        double d = a;
+        直接將不同型別的變數塞進另一個變數裡
+
+        | 顯式轉換               | 可能遺失精度（double → int）   |
+        如：
+        double d = 3.14;
+        int a = (int)d;
+        須加上額外指令指名要將不同型別的變數塞進另一個變數裡，可能會遺失資料，
+        如範例中d原本是3.14，轉換成int塞進a後剩下3而已
+
+        | Convert 類別           | 常用於字串與其他型別            |
+        如：
+        str s1 = "123", s2 = "123.123"
+        Convert.ToInt32(s1);
+        Convert.ToIntDouble(s2);
+        會依照一定規則轉換，例如小數部分不是直接捨去而是四捨五入
+
+        | Parse / TryParse       | 使用者輸入、字串轉數字最佳選擇  |
+        如：
+        Parse：
+        int n = int.Parse("123");       // 123
+        double d = double.Parse("3.14"); // 3.14
+        bool flag = bool.Parse("true");  // true
+
+        只能輸入 string 轉換，如果格式錯誤會拋例外
+        int n = int.Parse("abc");   // 例外：FormatException
+
+        TryParse：
+        更安全的轉換方式，可以避免被拋例外
+        int value;
+        bool ok = int.TryParse("123", out value);
+        if (ok)
+        {
+            Console.WriteLine(value); // 123
+        }
+        else
+        {
+            Console.WriteLine("轉換失敗");
+        }
+         */
+
+
+
+
+
+        /*
+        查詢各種運算符、用法、優先級，並整理成表格。
+        優先級由上排到下，常用的運算符如下：
+         ++x, x++...等               一元運算子，先對x做+1後使用，或使用後做+1
+         *, /, %                     乘、除、餘數
+         +, -                        加、減
+         <, >, <=, >=, is, as        關係與型別判斷
+         ==, !=                      相等、不等
+         &&                          邏輯AND
+         ||                          邏輯OR
+         =, +=, -=, *=...等          指派(+=系列：x += 10; x = x + 10 的意思)
+         */
+
+
+
+
+
+
+        ////2-1. 寫一程式，輸入x和y，如果x>=y，則列印x，否則列印y
+        //double x, y;
+        //Console.WriteLine("請依序輸入 x, y 兩數");
+        //x = Convert.ToDouble(Console.ReadLine());
+        //y = Convert.ToDouble(Console.ReadLine());
+        //Console.WriteLine($"x = {x}, y = {y}");
+
+        //if ( x >= y) { Console.WriteLine("x"); }
+        //else { Console.WriteLine("y"); }
+
+
+
+
+
+
+        ////2-2. 寫一程式，輸入x和y，如果x和y都是正數，令z=1，如兩者均為負數，令z=-1，否則令z=0
+        //double x, y;
+        //int z = 0;
+        //Console.WriteLine("請依序輸入x和y：");
+        //Console.Write("x = ");
+        //x = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("y = ");
+        //y = Convert.ToDouble(Console.ReadLine());
+        //if (x > 0 && y > 0) { z = 1; }
+        //if (x < 0 && y < 0) { z = -1; }
+        //Console.WriteLine("z = " + z);
+
+
+
+
+
+
+        ////2-3. 寫一程式，輸入x、y、u、v，如果(x+y)>(u+v)，則令z=x+y，否則令z=u+v
+        //double x, y, u, v, z;
+        //double sum1, sum2;
+        //Console.WriteLine("請依序輸入 x, y, u , v ：");
+        //Console.Write("x = ");
+        //x = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("y = ");
+        //y = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("u = ");
+        //u = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("v = ");
+        //v = Convert.ToDouble(Console.ReadLine());
+        //sum1 = x + y;
+        //sum2 = u + v;
+        //Console.WriteLine("x + y =" + sum1 + ", u + v = " + sum2);
+        //if(sum1 == sum2)
+        //{
+        //    z = 0;
+        //    Console.WriteLine("一樣大");
+        //}
+        //else
+        //{
+        //    z = Math.Max(sum1, sum2);
+        //    Console.WriteLine("z = " + z);
+        //}
+
+
+
+
+
+
+        ////2-4. 輸入x、y、u、v，如果((𝑥+𝑦))/((𝑢+𝑣))>=2，令z=x+y，否則令z=u+v。
+        //double x, y, u, v, z;
+        //double sum1, sum2;
+        //Console.WriteLine("請依序輸入 x, y, u , v ：");
+        //Console.Write("x = ");
+        //x = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("y = ");
+        //y = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("u = ");
+        //u = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("v = ");
+        //v = Convert.ToDouble(Console.ReadLine());
+        //sum1 = x + y;
+        //sum2 = u + v;
+        //z = sum2;
+        //if (sum2  == 0){
+        //    Console.WriteLine("ERROR：分母不可為0！");
+        //    return;
+        //}
+        //else if (sum1 / sum2 >= 2)
+        //{
+        //    z = sum1;
+        //}
+        //Console.WriteLine("z = " + z);
+
+
+
+
+
+
+        ////2-5. 寫一程式，輸入x和y，如果x>=y，令z=x^2，否則令z=y^2
+        //double x, y, z;
+        //Console.WriteLine("請依序輸入 x, y：");
+        //Console.Write("x = ");
+        //x = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("y = ");
+        //y = Convert.ToDouble(Console.ReadLine());
+        //if(x >= y)
+        //{
+        //    z = x * x;
+        //}
+        //else
+        //{
+        //    z = y * y;
+        //}
+        //Console.WriteLine("z = " + z);
+
+
+
+
+
+
+        ////2-6. 依流程圖寫出一程式：讀入收入並根據收入及稅率計算稅額
+        //double income, tax, rate, dif;
+        //Console.Write("Please enter income：");
+        //income = Convert.ToDouble(Console.ReadLine());
+        //if (income <= 0)
+        //{
+        //    Console.WriteLine("Get a job!");
+        //    return;
+        //}
+        //if (income >= 4090000)
+        //{
+        //    rate = 0.4;
+        //    dif = 721100;
+        //}
+        //else if (income >= 2180000)
+        //{
+        //    rate = 0.3;
+        //    dif = 312100;
+        //}
+        //else if (income >= 1090000)
+        //{
+        //    rate = 0.21;
+        //    dif = 115900;
+        //}
+        //else if (income >= 410000)
+        //{
+        //    rate = 0.13;
+        //    dif = 28700;
+        //}
+        //else 
+        //{
+        //    rate = 0.06;
+        //    dif = 0;
+        //}
+        //tax = income * rate - dif;
+        //Console.WriteLine("tax：" + tax);
+
+
+
+
+
+
+
+        ////2-7. 根據流程圖完成程式：象限判斷
+        //double x, y;
+        //string locate;
+        //Console.WriteLine("二維象限判斷");
+        //Console.Write("x = ");
+        //x = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("y = ");
+        //y = Convert.ToDouble(Console.ReadLine());
+        //if(x > 0)
+        //{
+        //    if(y > 0)
+        //    {
+        //        locate = "1st quadrant\n";
+        //    }
+        //    else if (y == 0)
+        //    {
+        //        locate = "X-axis\n";
+        //    }
+        //    else
+        //    {
+        //        locate = "4st quadrant\n";
+        //    }
+        //}
+        //else if (x == 0)
+        //{
+        //    if (y == 0)
+        //    {
+        //        locate = "Origin\n";
+        //    }
+        //    else
+        //    {
+        //        locate = "Y-axis\n";
+        //    }
+        //}
+        //else
+        //{
+        //    if (y > 0)
+        //    {
+        //        locate = "2st quadrant\n";
+        //    }
+        //    else if (y == 0)
+        //    {
+        //        locate = "X-axis\n";
+        //    }
+        //    else
+        //    {
+        //        locate = "3st quadrant\n";
+        //    }
+        //}
+        //Console.WriteLine("此點在 "+ locate);
+
+
+
+
+
+
+        ////補充習題1. 分數計算
+        //int correct, score;
+        //Console.Write("請輸入答對題數(整數)：");
+        //correct = Convert.ToInt32(Console.ReadLine());
+        //if(correct > 40)
+        //{
+        //    score = 100;
+        //}
+        //else if (correct > 20 && correct <= 40)
+        //{
+        //    score = 80 + (correct - 20);
+        //}
+        //else if (correct > 10 && correct <= 20)
+        //{
+        //    score = 60 + (correct - 10) * 2;
+        //}
+        //else
+        //{
+        //    score = correct * 6;
+        //}
+        //Console.WriteLine("分數為：" + score);
+
+
+
+
+
+
+        ////補充習題2. BMI計算器plus
+        //double height, weight, BMI;
+        //string BMI_context;
+        //Console.WriteLine("BMI計算器");
+        //Console.WriteLine("請輸入身高(cm)：");
+        //height = Convert.ToDouble(Console.ReadLine());
+        //height = height / 100;
+        //Console.WriteLine("請輸入體重(kg)：");
+        //weight = Convert.ToDouble(Console.ReadLine());
+        //if (height < 0 || weight < 0 || height > 5 || weight > 500)
+        //{
+        //    Console.WriteLine("請輸入有效數字！");
+        //}
+        //else
+        //{
+        //    BMI = weight / Math.Pow(height, 2);
+        //    if (BMI < 18.5)
+        //    {
+        //        BMI_context = "過輕";
+        //    }
+        //    else if (BMI >= 18.5 && BMI < 24)
+        //    {
+        //        BMI_context = "正常";
+        //    }
+        //    else if (BMI >= 24 && BMI < 27)
+        //    {
+        //        BMI_context = "過重";
+        //    }
+        //    else
+        //    {
+        //        BMI_context = "肥胖";
+        //    }
+        //    Console.WriteLine($"BMI 為：{BMI:F2}, {BMI_context}");
+        //}
+
+
+
+
+
+
+        ////補充習題3. 請隨意輸入三個數，請由大到小依序印出。
+        //double x, y, z;
+        //double n1, n2, n3;
+        //Console.WriteLine("請隨意輸入三個數：");
+        //Console.Write("數1：");
+        //x = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("數2：");
+        //y = Convert.ToDouble(Console.ReadLine());
+        //Console.Write("數3：");
+        //z = Convert.ToDouble(Console.ReadLine());
+        //if(x > y && x > z)
+        //{
+        //    n1 = x;
+        //    if (y > z) { n2 = y; n3 = z; }
+        //    else { n2 = z; n3 = y; }
+        //}
+        //else if (y > x && y > z)
+        //{
+        //    n1 = y;
+        //    if (x > z) { n2 = x; n3 = z; }
+        //    else { n2 = z; n3 = x; }
+        //}
+        //else
+        //{
+        //    n1 = z;
+        //    if (x > y) { n2 = x; n3 = y; }
+        //    else { n2 = y; n3 = x; }
+        //}
+        //Console.WriteLine($"由大到小排列為：{n1}, {n2}, {n3}");
+
+
+
+
+
+
+
+        ////補充習題4. 獎金計算
+        //double profit, bonus;
+        //Console.Write("請輸入利潤：");
+        //profit = Convert.ToDouble(Console.ReadLine());
+        //if (profit <= 0)
+        //{
+        //    Console.WriteLine("公司要倒啦！");
+        //    return;
+        //}
+
+        //if (profit > 0 && profit <= 100000)
+        //{
+        //    bonus = profit * 0.1;
+        //}
+        //else if (profit > 100000 && profit <= 200000)
+        //{
+        //    bonus = 100000 * 0.1 + (profit - 100000) * 0.075;
+        //}
+        //else if (profit > 200000 && profit <= 400000)
+        //{
+        //    bonus = 100000 * 0.1 + 100000 * 0.075 + (profit - 200000) * 0.05;
+        //}
+        //else if (profit > 400000 && profit <= 600000)
+        //{
+        //    bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + (profit - 400000) * 0.03;
+        //}
+        //else if (profit > 600000 && profit <= 1000000)
+        //{
+        //    bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + (profit - 600000) * 0.015;
+        //}
+        //else
+        //{
+        //    bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + 400000 * 0.015 + (profit - 1000000) * 0.01;
+        //}
+        //Console.WriteLine("本月獎金為：" + bonus);
+
+
+
+
+
+
+
+        ////補充習題4. 獎金計算，優化版
+        //double profit, bonus = 0;
+        //Console.Write("請輸入利潤：");
+        //profit = Convert.ToDouble(Console.ReadLine());
+        //if (profit <= 0)
+        //{
+        //    Console.WriteLine("公司要倒啦！");
+        //    return;
+        //}
+
+        //double remaining = profit;
+        //for (int i = 0; i < 6; i++)
+        //{
+        //    double limit = 0, rate = 0;
+        //    switch (i)
+        //    {
+        //        case 0:
+        //            limit = 1000000; rate = 0.01;
+        //            break;
+        //        case 1:
+        //            limit = 600000; rate = 0.015;
+        //            break;
+        //        case 2:
+        //            limit = 400000; rate = 0.03;
+        //            break;
+        //        case 3:
+        //            limit = 200000; rate = 0.05;
+        //            break;
+        //        case 4:
+        //            limit = 100000; rate = 0.075;
+        //            break;
+        //        case 5:
+        //            limit = 0; rate = 0.1;
+        //            break;
+        //    }
+        //    if (remaining > limit)
+        //    {
+        //        bonus += (remaining - limit) * rate;
+        //        remaining = limit;
+        //    }
+        //}
+        //Console.WriteLine("本月獎金為：" + bonus);
+    }
+}
