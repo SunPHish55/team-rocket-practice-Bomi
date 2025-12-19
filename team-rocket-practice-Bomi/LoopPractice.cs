@@ -504,6 +504,77 @@ namespace team_rocket_practice_Bomi
             //    Console.WriteLine("Every b is larger than a.");
             //}
             //Console.ReadKey();
+
+
+
+
+
+
+            ////補充習題4-1. Eric覺得麥蒂勞的39元漢堡實在太便宜、太好吃了，
+            ////因此他決定晚餐要把口袋裡所有錢通通拿來吃39元漢堡。
+            ////假設他每5分鐘就能吃一個漢堡，請隨意輸入一個時間，輸出這段時間吃漢堡的紀錄。
+            //int time, burger = 0, cost = 0;
+            //Console.WriteLine("Please enter time(minutes):");
+            //time = Convert.ToInt32(Console.ReadLine());
+            //while(time >= 5)
+            //{
+            //    burger++;
+            //    cost += 39;
+            //    time -= 5;
+            //}
+            //Console.WriteLine($"吃掉的漢堡：{burger} 個");
+            //Console.WriteLine($"花掉的錢：{cost} 元");
+            //Console.WriteLine($"還剩 {time} 分鐘");
+            //Console.ReadKey();
+
+
+
+
+
+
+            ////補充習題4-2. 小明貸款買房花560萬，每個月可還4萬，
+            ////每還12個月，因為年終獎金可以多還一萬，請問需要幾個月還清。
+            //int debt = 560, month = 0;
+            //while(debt > 0)
+            //{
+            //    debt -= 4;
+            //    month++;
+            //    if(month % 12 == 0)
+            //    {
+            //        debt -= 1;
+            //    }
+            //    //Console.WriteLine($"目前欠款：{debt}");
+            //}
+            //Console.WriteLine($"花了 {month} 個月，終於還完了！");
+            //Console.ReadKey();
+
+
+
+
+
+
+            ////補充習題4-3. 系統隨機產生一個數字，讓使用者數入數字，直到猜中才離開程式！
+            ////猜錯時，要提示是比較大還是比較小。
+            //int ans, n;
+            //Random rnd = new Random();
+            //ans = rnd.Next(-1000, 1000);
+            //do
+            //{
+            //    Console.WriteLine("Guess a number:");
+            //    n = Convert.ToInt32(Console.ReadLine());
+            //    if (n - ans > 0)
+            //    {
+            //        Console.WriteLine("Smaller!");
+            //    }
+            //    else if (n - ans < 0)
+            //    {
+            //        Console.WriteLine("Larger!");
+            //    }
+            //} while (n != ans);
+            //Console.WriteLine($"Bingo! The answer is {ans}.");
+            //Console.ReadKey();
+
+
         }
     }
 }
