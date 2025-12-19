@@ -175,6 +175,189 @@ namespace team_rocket_practice_Bomi
             //    Console.Write($"{positive}, ");
             //}
             //Console.ReadKey();
+
+
+
+
+
+            ////補充習題3-1.判斷101-200之間有多少個質數，並輸出所有質數。
+            //List<int> primes = new List<int>();
+            //for(int i = 101; i < 201; i++)
+            //{
+            //    bool isPrime = true;
+            //    for (int j = 2; j*j <= i; j++)
+            //    {
+            //        if( i % j == 0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+            //    }
+            //    if( isPrime == true)
+            //    {
+            //        primes.Add(i);
+            //    }
+            //}
+            //Console.WriteLine("Primes in 101~200 are: ");
+            //foreach(int prime in primes)
+            //{
+            //    Console.Write($"{prime}, ");
+            //}
+            //Console.ReadKey();
+
+
+
+
+
+
+            ////補充習題3-1. 找101~200質數，While版
+            //List<int> primes = new List<int>();
+            //int i = 101;
+            //while ( i < 201 )
+            //{
+            //    bool isPrime = true;
+            //    int j = 2;
+            //    while ( j * j <= i)
+            //    {
+            //        if (i % j == 0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+            //        j++;
+            //    }
+            //    if (isPrime == true)
+            //    {
+            //        primes.Add(i);
+            //    }
+            //    i++;
+            //}
+            //Console.WriteLine("Primes in 101~200 are: ");
+            //foreach (int prime in primes)
+            //{
+            //    Console.Write($"{prime}, ");
+            //}
+            //Console.ReadKey();
+
+
+
+
+
+
+            ////補充習題3-2. 輸入一個數，輸出其質因數
+            //List<int> primes = new List<int>();
+            //List<int> pfactors = new List<int>();
+            //int n;
+            //Console.WriteLine("Please enter a integer N : ");
+            //n = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 2; i < n; i++)
+            //{
+            //    bool isPrime = true;
+            //    for (int j = 2; j * j <= i; j++)
+            //    {
+            //        if (i % j == 0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+            //    }
+            //    if (isPrime == true)
+            //    {
+            //        primes.Add(i);
+            //        if( n % i == 0)
+            //        {
+            //            pfactors.Add(i);
+            //        }
+            //    }
+            //}
+            //Console.WriteLine("Prime factors of N are: ");
+            //foreach (int pfactor in pfactors)
+            //{
+            //    Console.Write($"{pfactor}, ");
+            //}
+            //Console.ReadKey();
+
+
+
+
+
+
+
+            ////補充習題3-2. 找質因數，while版
+            //List<int> primes = new List<int>();
+            //List<int> pfactors = new List<int>();
+            //int n;
+            //Console.WriteLine("Please enter a integer N : ");
+            //n = Convert.ToInt32(Console.ReadLine());
+            //int i = 2;
+            //while ( i < n )
+            //{
+            //    bool isPrime = true;
+            //    int j = 2;
+            //    while ( j * j <= i)
+            //    {
+            //        if (i % j == 0)
+            //        {
+            //            isPrime = false;
+            //            break;
+            //        }
+            //        j++;
+            //    }
+            //    if (isPrime == true)
+            //    {
+            //        primes.Add(i);
+            //        if (n % i == 0)
+            //        {
+            //            pfactors.Add(i);
+            //        }
+            //    }
+            //    i++;
+            //}
+            //Console.WriteLine("Prime factors of N are: ");
+            //foreach (int pfactor in pfactors)
+            //{
+            //    Console.Write($"{pfactor}, ");
+            //}
+            //Console.ReadKey();
+
+
+
+
+
+
+            ////補充習題3-3. 求100到300中可以被3與7整除的個數。
+            //int m = 0;
+            //for (int i = 100; i < 301; i++)
+            //{
+            //    if(i % 21 == 0)
+            //    {
+            //        m++;
+            //    }
+            //}
+            //Console.WriteLine(" Amount of multiples of 3 & 7 in 100~300 are: ");
+            //Console.WriteLine($"{m}");
+            //Console.ReadKey();
+
+
+
+
+
+
+
+            ////補充習題3-3. 求100到300中可以被3與7整除的個數，while版
+            //int m = 0;
+            //int i = 100;
+            //while ( i < 301 )
+            //{
+            //    if (i % 21 == 0)
+            //    {
+            //        m++;
+            //    }
+            //    i++;
+            //}
+            //Console.WriteLine("Amount of multiples of 3 & 7 in 100~300 are: ");
+            //Console.WriteLine($"{m}");
+            //Console.ReadKey();
         }
     }
 }
