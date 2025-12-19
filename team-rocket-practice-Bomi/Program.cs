@@ -9,7 +9,7 @@ namespace team_rocket_practice_Bomi
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             //Console.WriteLine("Choose which practice you want to check:");
             //IfElsePractice.Run();
