@@ -358,6 +358,152 @@ namespace team_rocket_practice_Bomi
             //Console.WriteLine("Amount of multiples of 3 & 7 in 100~300 are: ");
             //Console.WriteLine($"{m}");
             //Console.ReadKey();
+
+
+
+
+
+
+
+            ////4-1. 利用while寫一程式求N個數字的最大值。
+            //Console.WriteLine("Please enter N:");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($"Please enter {n} numbers:");
+            //double num, max = double.MinValue;
+            //int i = 0;
+            //while (i < n)
+            //{
+            //    num = Convert.ToDouble(Console.ReadLine());
+            //    if(num > max)
+            //    {
+            //        max = num;
+            //    }
+            //    i++;
+            //}
+            //Console.WriteLine($"The maximun number is : {max}");
+            //Console.ReadKey();
+
+
+
+
+
+
+
+            ////4-2. 利用while寫一程式求一個等差級數數字的和，
+            ////一共有N個數字，程式應該輸入最小的起始值以及數字間的差。(即從起始值開始，間格差，共N個 的總和)
+            //int n, a1, d, sum = 0;
+            //Console.WriteLine("Please enter the number of terms(n):");
+            //n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter the start of arithmetic series(a1):");
+            //a1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter the common difference(d):");
+            //d = Convert.ToInt32(Console.ReadLine());
+            //int i = 0;
+            //while( i < n)
+            //{
+            //    Console.WriteLine($"a{i + 1} = {a1}");
+            //    sum += a1;
+            //    a1 += d;
+            //    i++;
+            //}
+            //Console.WriteLine($"sum = {sum}");
+            //Console.ReadKey();
+
+
+
+
+
+
+
+            ////4-3. 利用while寫一程式，讀入N個數字，然後找出所有小於13的數，再求這些數字的和。
+            //int n, num, sum = 0;
+            //List<int> values = new List<int>();
+            //Console.WriteLine("Please enter N:");
+            //n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter N numbers:");
+            //int i = 0;
+            //while( i < n )
+            //{
+            //    num = Convert.ToInt32(Console.ReadLine());
+            //    if(num < 13)
+            //    {
+            //        values.Add(num);
+            //        sum += num;
+            //    }
+            //    i++;
+            //}
+            //Console.WriteLine("Numbers less than 13:");
+            //foreach(int v in values)
+            //{
+            //    Console.Write($"{v}, ");
+            //}
+            //Console.WriteLine($"\nsum = {sum}");
+            //Console.ReadKey();
+
+
+
+
+
+
+
+            ////4-4. 利用while寫一程式，讀入N個數字，找到第一個大於7而小於10的數字就停止，而且列印出這個數字。
+            //int n, num = 0;
+            //Console.WriteLine("Please enter N:");
+            //n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter N numbers:");
+            //int i = 0;
+            //bool founded = false;
+            //while (i < n)
+            //{
+            //    num = Convert.ToInt32(Console.ReadLine());
+            //    if(num > 7 && num < 10)
+            //    {
+            //        founded = true;
+            //        break;
+            //    }
+            //    i++;
+            //}
+            //if (founded == true)
+            //{
+            //    Console.WriteLine($"7 < {num} < 10 ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("There is no number between 7 and 10.");
+            //}
+            //Console.ReadKey();
+
+
+
+
+
+
+            ////4-5. 利用while寫一程式，讀入a1,a2,…,a5和b1,b2,…,b5。找到第一個ai>bi，即停止，並列印出ai及bi。
+            //int a = 0, b = 0;
+            //bool founded = false;
+            //int i = 1;
+            //while(i <= 5)
+            //{
+            //    Console.Write($"a{i} = ");
+            //    a = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write($"b{i} = ");
+            //    b = Convert.ToInt32(Console.ReadLine());
+            //    if(a > b)
+            //    {
+            //        founded = true;
+            //        break;
+            //    }
+            //    i++;
+            //}
+            //if (founded == true)
+            //{
+            //    Console.WriteLine($"Founded : a{i} = {a}, b{i} = {b}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Every b is larger than a.");
+            //}
+            //Console.ReadKey();
         }
     }
 }
