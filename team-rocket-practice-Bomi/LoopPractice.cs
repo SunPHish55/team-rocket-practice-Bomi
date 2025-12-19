@@ -575,6 +575,61 @@ namespace team_rocket_practice_Bomi
             //Console.ReadKey();
 
 
+
+
+
+
+
+            ////Bonus1：P.34附圖的依據輸入客製化的聖誕樹
+            //int n;
+            //string leaf;
+            //Console.WriteLine("Please enter the layer number(n) for the Christmas tree:");
+            //n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Please enter the symbol you want to use for Christmas tree:");
+            //leaf = Console.ReadLine();
+            //for(int i = 0; i < n; i++)
+            //{
+            //    for(int j = n-i ; j > 0; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int j = 0; j < (2*i + 1) ; j++)
+            //    {
+            //        Console.Write($"{leaf}");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //for(int i = 0; i < n/2; i++)
+            //{
+            //    for(int j = 0; j < n-1; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    Console.WriteLine("| |");
+            //}
+            //Console.WriteLine("Merry Christmas!");
+            //Console.ReadKey();
+
+
+
+
+
+
+
+            ////Bonus2. 用遞迴(Recursion)方式寫出費波那契數列：輸入整數N，輸出fibonacci(N) [費氏數列的第N個數]
+            //int Fib(int f)
+            //{
+            //    if (f == 1) return 1;
+            //    if (f == 2) return 1;
+            //    return Fib(f - 1) + Fib(f - 2);
+            //}
+
+            //int n, ans;
+            //Console.WriteLine("請輸入 N :");
+            //n = Convert.ToInt32(Console.ReadLine());
+            //ans = Fib(n);
+            //Console.WriteLine($"費氏數列的第{n}個數 = {ans}");
+            //Console.ReadKey();
         }
     }
 }
