@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace team_rocket_practice_Bomi
 {
-    public static class Menu
+    public static class Menus
     {
         public static int KeyboardMenu(string[] items, string title = null)
         {
