@@ -12,9 +12,9 @@ namespace team_rocket_practice_Bomi
         {
             ////5-1. 寫一程式，將10個數字讀入A陣列，然後逐一檢查此陣列，如A[i]>5，則令A[i]=A[i]-5，否則A[i]=A[i]+5。
             //int[] values = new int[10];
-            //for(int i = 0; i < values.Length; i++)
+            //for (int i = 0; i < values.Length; i++)
             //{
-            //    Console.WriteLine($"請輸入第{i+1}個數字：");
+            //    Console.WriteLine($"請輸入第{i + 1}個數字：");
             //    values[i] = Convert.ToInt32(Console.ReadLine());
             //    if (values[i] > 5)
             //    {
@@ -28,7 +28,7 @@ namespace team_rocket_practice_Bomi
             //Console.WriteLine("結果為：");
             //foreach (int v in values)
             //{
-            //    Console.Write($"{v}, ");
+            //    Console.Write($"{v,4}");
             //}
             //Console.ReadKey();
 
@@ -48,7 +48,7 @@ namespace team_rocket_practice_Bomi
             //Console.WriteLine("結果為：");
             //foreach (int v in values)
             //{
-            //    Console.Write($"{v}, ");
+            //    Console.Write($"{v,4}");
             //}
             //Console.ReadKey();
 
@@ -92,21 +92,15 @@ namespace team_rocket_practice_Bomi
 
             ////5-4. 寫一程式，將15數字存入3×5的二維陣列A中，求每一行及每一列數字的和。
             //int[,] a = new int[3, 5];
-            //int[] row_sum = new int[3] {0, 0, 0};
-            //int[] column_sum = new int[5] {0, 0, 0, 0, 0};
-            //for ( int i = 0; i < a.GetLength(0); i++)
+            //int[] row_sum = new int[3] { 0, 0, 0 };
+            //int[] column_sum = new int[5] { 0, 0, 0, 0, 0 };
+            //for (int i = 0; i < a.GetLength(0); i++)
             //{
-            //    for(int j = 0; j < a.GetLength(1); j++)
+            //    for (int j = 0; j < a.GetLength(1); j++)
             //    {
-            //        Console.WriteLine( $"請輸入row {i}, column {j} 的數字：");
+            //        Console.WriteLine($"請輸入row {i}, column {j} 的數字：");
             //        a[i, j] = Convert.ToInt32(Console.ReadLine());
             //        row_sum[i] += a[i, j];
-            //    }
-            //}
-            //for (int j = 0; j < a.GetLength(1); j++)
-            //{
-            //    for (int i = 0; i < a.GetLength(0); i++)
-            //    {
             //        column_sum[j] += a[i, j];
             //    }
             //}
@@ -114,15 +108,15 @@ namespace team_rocket_practice_Bomi
             //{
             //    for (int j = 0; j < a.GetLength(1); j++)
             //    {
-            //        Console.Write($"{a[i,j]}  ");
+            //        Console.Write($"{a[i, j], 4}");
             //    }
-            //    Console.WriteLine($"sum = {row_sum[i]}");
+            //    Console.WriteLine($"| sum = {row_sum[i]}");
             //}
-            //foreach(int s in column_sum)
+            //Console.WriteLine("---- column sum ----");
+            //foreach (int s in column_sum)
             //{
-            //    Console.Write($"{s}  ");
+            //    Console.Write($"{s,4}");
             //}
-            //Console.WriteLine("<---sum");
             //Console.ReadKey();
 
 
@@ -132,7 +126,7 @@ namespace team_rocket_practice_Bomi
 
             ////5-5. 寫一程式，將15數字存入3×5的二維陣列A中，求每一行及每一列數字的最小值。
             //int[,] a = new int[3, 5];
-            //int[] row_max = new int[3] { int.MinValue,  int.MinValue, int.MinValue };
+            //int[] row_max = new int[3] { int.MinValue, int.MinValue, int.MinValue };
             //int[] column_max = new int[5] { int.MinValue, int.MinValue, int.MinValue, int.MinValue, int.MinValue };
             //for (int i = 0; i < a.GetLength(0); i++)
             //{
@@ -144,12 +138,6 @@ namespace team_rocket_practice_Bomi
             //        {
             //            row_max[i] = a[i, j];
             //        }
-            //    }
-            //}
-            //for (int j = 0; j < a.GetLength(1); j++)
-            //{
-            //    for (int i = 0; i < a.GetLength(0); i++)
-            //    {
             //        if (a[i, j] > column_max[j])
             //        {
             //            column_max[j] = a[i, j];
@@ -160,15 +148,15 @@ namespace team_rocket_practice_Bomi
             //{
             //    for (int j = 0; j < a.GetLength(1); j++)
             //    {
-            //        Console.Write($"{a[i, j]}  ");
+            //        Console.Write($"{a[i, j], 4}");
             //    }
-            //    Console.WriteLine($"max = {row_max[i]}");
+            //    Console.WriteLine($"|max = {row_max[i]}");
             //}
+            //Console.WriteLine("----- column max -----");
             //foreach (int max in column_max)
             //{
-            //    Console.Write($"{max}  ");
+            //    Console.Write($"{max, 4}");
             //}
-            //Console.WriteLine("<---max");
             //Console.ReadKey();
 
 
@@ -178,19 +166,13 @@ namespace team_rocket_practice_Bomi
 
             ////5-6. 寫一程式，輸入兩組數字：a1,a2,…,a5和b1,b2,…,b5。求ai+bi，i=1到i=5。
             //int[,] ab = new int[2, 5];
-            //int[] sums = new int[5] {0,0,0,0,0};
-            //for(int i = 0; i < ab.GetLength(0); i++)
+            //int[] sums = new int[5] { 0, 0, 0, 0, 0 };
+            //for (int i = 0; i < ab.GetLength(0); i++)
             //{
-            //    for(int j = 0; j < ab.GetLength(1); j++)
+            //    for (int j = 0; j < ab.GetLength(1); j++)
             //    {
             //        Console.WriteLine($"請輸入row {i}, column {j} 的數：");
             //        ab[i, j] = Convert.ToInt32(Console.ReadLine());
-            //    }
-            //}
-            //for(int j = 0; j < ab.GetLength(1); j++)
-            //{
-            //    for (int i = 0; i < ab.GetLength(0); i++)
-            //    {
             //        sums[j] += ab[i, j];
             //    }
             //}
@@ -198,11 +180,12 @@ namespace team_rocket_practice_Bomi
             //{
             //    for (int j = 0; j < ab.GetLength(1); j++)
             //    {
-            //        Console.Write($"{ab[i, j]}  ");
+            //        Console.Write($"{ab[i, j], 4}");
             //    }
             //    Console.WriteLine("");
             //}
-            //for(int i = 0; i < sums.GetLength(0); i++)
+            //Console.WriteLine("----- ai + bi -----");
+            //for (int i = 0; i < sums.GetLength(0); i++)
             //{
             //    Console.WriteLine($"a{i} + b {i} = {sums[i]}");
             //}
@@ -215,7 +198,7 @@ namespace team_rocket_practice_Bomi
             ////5-7. 寫一程式，輸入兩組數字： a1,a2,…,a5和b1,b2,…,b5。
             ////令x為a中的最大值，令y為b中的最大值，求x與y中較小者。
             //int[,] ab = new int[2, 5];
-            //int[] maxs = new int[2] {int.MinValue, int.MinValue};
+            //int[] maxs = new int[2] { int.MinValue, int.MinValue };
             //for (int i = 0; i < ab.GetLength(0); i++)
             //{
             //    for (int j = 0; j < ab.GetLength(1); j++)
@@ -232,14 +215,14 @@ namespace team_rocket_practice_Bomi
             //{
             //    for (int j = 0; j < ab.GetLength(1); j++)
             //    {
-            //        Console.Write($"{ab[i, j]}  ");
+            //        Console.Write($"{ab[i, j],4}");
             //    }
             //    Console.WriteLine("");
             //}
-            //Console.WriteLine("x  y");
-            //foreach(int max in maxs)
+            //Console.WriteLine("   x   y");
+            //foreach (int max in maxs)
             //{
-            //    Console.Write($"{max}  ");
+            //    Console.Write($"{max,4}");
             //}
             //Console.WriteLine($"\n{maxs.Min()}比較小");
             //Console.ReadKey();
