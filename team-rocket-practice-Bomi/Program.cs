@@ -13,7 +13,8 @@ namespace team_rocket_practice_Bomi
         {
             //Console.WriteLine("Choose which practice you want to check:");
             //IfElsePractice.Run();
-            LoopPractice.Run();
+            //LoopPractice.Run();
+            ArrayPractice.Run();
         }
     }
 }
