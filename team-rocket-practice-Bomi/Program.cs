@@ -13,8 +13,13 @@ namespace team_rocket_practice_Bomi
         {
             while (true)
             {
-                string[] menu = { "If/Else Practice", "Loop Practice", "Array Practice", "離開" };
-                int choice = Menus.KeyboardMenu(menu);
+                string[] menu = { 
+                    "If/Else Practice", 
+                    "Loop Practice", 
+                    "Array Practice",
+                    "String Practice",
+                    "離開" };
+                int choice = Menus.KeyboardMenu(menu, "Main Menu");
 
                 switch (choice)
                 {
@@ -28,6 +33,9 @@ namespace team_rocket_practice_Bomi
                         ArrayPractice.Menu();
                         break;
                     case 3:
+                        StringPractice.Menu();
+                        break;
+                    case 4:
                         return;
                     default:
                         break;
