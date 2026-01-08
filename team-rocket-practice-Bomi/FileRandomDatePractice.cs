@@ -27,6 +27,15 @@ namespace team_rocket_practice_Bomi
                     "ex7-2-1：樂透開獎程式。",
                     "ex7-2-2：請在文字檔裡輸入午餐的店家，讀取文字檔，隨機抽出今天中午要吃哪一家。",
                     "ex7-2-3：讀取文字檔，隨機抽出值日生，直到全部學員都被抽過後，才可以再被抽。",
+                    "7-3-1：顯示現在日期時間。",
+                    "7-3-2：顯示再過30天為哪一天。",
+                    "7-3-3：顯示24小時前的年月日時分秒。",
+                    "7-3-4：取得目前是幾月。",
+                    "7-3-5：取得明年是否為閏年。",
+                    "7-3-6：取得離2025年1月1日還有幾天。",
+                    "ex7-3-1：請顯示今天猴子做甚麼事。",
+                    "ex7-3-2：輸入兩個日期，輸出兩個日期相差幾天。",
+                    "ex7-3-3：算命。",
                     "回主選單"
                     },
                     "File, Random, Date Practice（CH 7）"
@@ -45,6 +54,15 @@ namespace team_rocket_practice_Bomi
                     case 8: ex7_2_1(); break;
                     case 9: ex7_2_2(); break;
                     case 10: ex7_2_3(); break;
+                    case 11: Q7_3_1(); break;
+                    case 12: Q7_3_2(); break;
+                    case 13: Q7_3_3(); break;
+                    case 14: Q7_3_4(); break;
+                    case 15: Q7_3_5(); break;
+                    case 16: Q7_3_6(); break;
+                    case 17: ex7_3_1(); break;
+                    case 18: ex7_3_2(); break;
+                    case 19: ex7_3_3(); break;
                     default: return; // 回主選單
                 }
             }
@@ -333,5 +351,159 @@ namespace team_rocket_practice_Bomi
             Console.ReadKey();
         }
 
+
+
+
+
+
+        //7-3-1：顯示現在日期與時間。
+        static void Q7_3_1()
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine(now);
+            Console.ReadKey();
+        }
+
+
+
+
+        //7-3-2：顯示再過30天為哪一天。
+        static void Q7_3_2()
+        {
+            DateTime now = DateTime.Now;
+            DateTime monthLater = now.AddDays(30);
+            string s = monthLater.ToString("yyyy-MM-dd");
+            Console.WriteLine($"30天後為：{s}");
+            Console.ReadKey();
+        }
+
+
+
+
+        //7-3-3：顯示24小時前的年月日時分秒。
+        static void Q7_3_3()
+        {
+            DateTime yesterday = DateTime.Now.AddHours(-24);
+            Console.WriteLine(yesterday);
+            Console.ReadKey();
+        }
+
+
+
+
+        //7-3-4：取得目前是幾月。
+        static void Q7_3_4()
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine($"現在 {now.Month} 月。");
+            Console.ReadKey();
+        }
+
+
+
+
+        //7-3-5：取得明年是否為閏年。
+        static void Q7_3_5()
+        {
+            int nextYear = DateTime.Now.AddYears(1).Year;
+            bool isLeap = DateTime.IsLeapYear(nextYear);
+            if (isLeap)
+            {
+                Console.WriteLine("明年是閏年。");
+            }
+            else
+            {
+                Console.WriteLine("明年不是閏年。");
+            }
+            Console.ReadKey();
+        }
+
+
+
+
+
+        //7-3-6：取得離2025年1月1日還有幾天。
+        static void Q7_3_6()
+        {
+            DateTime compareTime = DateTime.Parse("2025-01-01");
+            DateTime now = DateTime.Now;
+            TimeSpan diff = compareTime - now;
+            Console.WriteLine(diff);
+            int days = diff.Days;
+            if (days > 0)
+            {
+                Console.WriteLine($"距離2025-01-01還有 {days} 天");
+            }
+            else if (days < 0)
+            {
+                Console.WriteLine($"距離2025-01-01已經過了 {-days} 天");
+            }
+            else
+            {
+                Console.WriteLine("2025-01-01就在今天");
+            }
+            Console.ReadKey();
+        }
+
+
+
+
+
+        //ex7-3-1：請顯示今天猴子做甚麼事。
+        static void ex7_3_1()
+        {
+            string[] action = {
+                "星期日，猴子過生日",
+                "星期一，猴子穿新衣",
+                "星期二，猴子肚子餓",
+                "星期三，猴子去爬山",
+                "星期四，猴子看電視",
+                "星期五，猴子去跳舞",
+                "星期六，猴子去斗六",
+                };
+            DayOfWeek day = DateTime.Now.DayOfWeek;
+            Console.WriteLine(action[(int)day]);
+            Console.ReadKey();
+        }
+
+
+
+
+
+        //ex7-3-2：輸入兩個日期，輸出兩個日期相差幾天。
+        static void ex7_3_2()
+        {
+            string s1, s2;
+            Console.WriteLine("請依序輸入兩個日期(格式:yyyy-MM-dd)：");
+            s1 = Console.ReadLine();
+            s2 = Console.ReadLine();
+            DateTime d1 = DateTime.Parse(s1);
+            DateTime d2 = DateTime.Parse(s2);
+            TimeSpan diff = d2 - d1;
+            Console.WriteLine($"兩個日期相差 {Math.Abs(diff.Days)} 天");
+            Console.ReadKey();
+        }
+
+
+
+
+        //ex7-3-3：算命。
+        static void ex7_3_3()
+        {
+            Random random = new Random();
+            int luck;
+            int year = DateTime.Now.Year;
+            int month = random.Next(1, 13);
+            int day = random.Next(1, DateTime.DaysInMonth(year, month) + 1);
+            luck = (month*2 + day) % 3;
+            switch (luck)
+            {
+                case 0: Console.WriteLine("今日運勢：普通"); break;
+                case 1: Console.WriteLine("今日運勢：吉"); break;
+                case 2: Console.WriteLine("今日運勢：大吉"); break;
+                default: break;
+            }
+            Console.ReadKey();
+        }
     }
 }

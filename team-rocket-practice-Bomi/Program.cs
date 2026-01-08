@@ -11,37 +11,41 @@ namespace team_rocket_practice_Bomi
     {
         static void Main()
         {
-            FileRandomDatePractice.Menu();
-            //while (true)
-            //{
-            //    string[] menu = { 
-            //        "If/Else Practice", 
-            //        "Loop Practice", 
-            //        "Array Practice",
-            //        "String Practice",
-            //        "離開" };
-            //    int choice = Menus.KeyboardMenu(menu, "Main Menu");
+            
+            while (true)
+            {
+                string[] menu = {
+                    "If/Else Practice",
+                    "Loop Practice",
+                    "Array Practice",
+                    "String Practice",
+                    "File/Random/Date Practice",
+                    "離開" };
+                int choice = Menus.KeyboardMenu(menu, "Main Menu");
 
-            //    switch (choice)
-            //    {
-            //        case 0:
-            //            IfElsePractice.Menu();
-            //            break;
-            //        case 1:
-            //            LoopPractice.Menu();
-            //            break;
-            //        case 2:
-            //            ArrayPractice.Menu();
-            //            break;
-            //        case 3:
-            //            StringPractice.Menu();
-            //            break;
-            //        case 4:
-            //            return;
-            //        default:
-            //            break;
-            //    }
-            //}
+                switch (choice)
+                {
+                    case 0:
+                        IfElsePractice.Menu();
+                        break;
+                    case 1:
+                        LoopPractice.Menu();
+                        break;
+                    case 2:
+                        ArrayPractice.Menu();
+                        break;
+                    case 3:
+                        StringPractice.Menu();
+                        break;
+                    case 4:
+                        FileRandomDatePractice.Menu();
+                        break;
+                    case 5:
+                        return;
+                    default:
+                        break;
+                }
+            }
         }
     }
 }
