@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="ArrayPractice.cs" />
     <Compile Include="FileRandomDatePractice.cs" />
+    <Compile Include="FunctionPractice.cs" />
     <Compile Include="IfElsePractice.cs" />
     <Compile Include="LoopPractice.cs" />
     <Compile Include="Menus.cs" />

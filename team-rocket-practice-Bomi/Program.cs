@@ -11,7 +11,7 @@ namespace team_rocket_practice_Bomi
     {
         static void Main()
         {
-            
+
             while (true)
             {
                 string[] menu = {
@@ -20,6 +20,7 @@ namespace team_rocket_practice_Bomi
                     "Array Practice",
                     "String Practice",
                     "File/Random/Date Practice",
+                    "Function Practice",
                     "離開" };
                 int choice = Menus.KeyboardMenu(menu, "Main Menu");
 
@@ -41,6 +42,9 @@ namespace team_rocket_practice_Bomi
                         FileRandomDatePractice.Menu();
                         break;
                     case 5:
+                        FunctionPractice.Menu();
+                        break;
+                    case 6:
                         return;
                     default:
                         break;
