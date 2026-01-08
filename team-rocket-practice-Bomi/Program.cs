@@ -11,13 +11,15 @@ namespace team_rocket_practice_Bomi
     {
         static void Main()
         {
+            
             while (true)
             {
-                string[] menu = { 
-                    "If/Else Practice", 
-                    "Loop Practice", 
+                string[] menu = {
+                    "If/Else Practice",
+                    "Loop Practice",
                     "Array Practice",
                     "String Practice",
+                    "File/Random/Date Practice",
                     "離開" };
                 int choice = Menus.KeyboardMenu(menu, "Main Menu");
 
@@ -36,15 +38,14 @@ namespace team_rocket_practice_Bomi
                         StringPractice.Menu();
                         break;
                     case 4:
+                        FileRandomDatePractice.Menu();
+                        break;
+                    case 5:
                         return;
                     default:
                         break;
                 }
             }
-            //Console.WriteLine("Choose which practice you want to check:");
-            //IfElsePractice.Run();
-            //LoopPractice.Run();
-            //ArrayPractice.Run();
         }
     }
 }
